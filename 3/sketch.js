@@ -5,7 +5,7 @@ let ball = [];
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 500);
   gravity = createVector(0, 0.1);
   stroke(255)
   strokeWeight(1);
@@ -17,7 +17,7 @@ function setup() {
 
 
 function draw() {
-  background(200, 0, 0);
+  background(250, 0, 0);
   for (var i = 0; i < 30; i++) {
     ball[i].show();
     ball[i].update();
