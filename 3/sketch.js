@@ -6,7 +6,6 @@ let ball = [];
 
 function setup() {
   createCanvas(400, 400);
-  colorMode(HSB, 360, 100, [255]);
   gravity = createVector(0, 0.1);
   stroke(255)
   strokeWeight(1);
