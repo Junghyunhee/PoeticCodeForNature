@@ -12,7 +12,7 @@ function setup() {
   strokeWeight(1);
   for (let i = 0; i < 30; i++) {
     ball[i] = new Particle();
-
+    
   }
 }
 
@@ -25,7 +25,7 @@ function draw() {
     ball[i].isDead();
     if (mouseIsPressed) {
       ball[i].hold();
-
+        
     }
   }
 
@@ -36,7 +36,8 @@ function mouseReleased() {
     ball[i].addForce(gravity);
     wind = createVector(random(-3, 3));
     ball[i].addForce(wind);
-
+    
   }
  return false;
 }
+ 

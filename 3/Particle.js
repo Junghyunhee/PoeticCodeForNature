@@ -6,7 +6,7 @@ class Particle {
 
     this.c = color(random(1, 255), random(1, 255), random(1, 255));
     this.w = random(10,30);
-
+    
    this.particles = [];
   }
 
@@ -38,24 +38,24 @@ class Particle {
       this.vel.x = this.vel.x * -1;
       this.pos.x = 0;
     }
-
+    
     if (this.pos.y < 0) {
       this.vel.y = this.vel.y * -1;
       this.pos.y = 0;
     }
   }
-
+    
     hold(){
       this.pos.x = mouseX;
     this.pos.y = mouseY;
     this.acc.set(0,0);
-
+  
   }
 
   show() {
     fill(this.c);
     ellipse(this.pos.x, this.pos.y, this.w, this.w);
-
+   
   }
 
 
